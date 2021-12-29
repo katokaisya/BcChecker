@@ -1,0 +1,109 @@
+@import url('//fonts.googleapis.com/css?family=Noto+Serif+JP:100,200,500');
+
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 100%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    background: #fff;
+    font-family: "Noto Serif JP", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ＭＳ 明朝", "MS Mincho", serif, sans-serif;
+    color: #000;
+    font-weight: 500;
+}
+header, footer {
+    display: block;
+    width: 100%;
+    min-height: 20px;
+    background-color: #535A62;
+}
+article,
+body > div {
+    margin: 80px auto 0;
+    text-align: left;
+    padding: 0 10vw;
+}
+
+div{
+    max-width:80%;
+    padding:40px 100px;
+    margin:80px auto 0px;
+    border:2px solid #dddddd;
+    background-color:#fff;
+}
+div.lead{
+    border: none;
+    max-width: 100%;
+}
+div.lead p,div.end p{
+    padding: 0;
+    text-align: center;
+}
+div.center {
+    margin 0;
+    padding: 0;
+    border: none;
+}
+p,li{
+    margin:0;
+    padding:0;
+}
+h1 , form{
+    text-align: center;
+}
+
+}
+h1{
+    color:#0082ff;
+}
+
+h2{
+    font-size: 18px;
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
+    /* color:#0082ff; */
+}
+form, table , hr{
+    border-collapse: collapse;
+    width: 100%!important;
+    margin-bottom: 1rem;
+}
+form table {
+    width: 60%!important;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+td input {
+    width: 90%;
+}
+th {
+    background: #eee;
+    text-align: left;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.2em 0.3em;
+}
+h1 small {
+    font-size: 0.4em;
+    color: #000;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.end {
+    margin: 3.5em 0;
+    border: 2px solid #ac181e;
+}
+
+.end p {
+    margin: 0 auto;
+    padding: 20px;
+    border-width: 0 2px 2px 2px;
+    background: #fff;
+}
+input[type="submit"] {
+    text-align: center;
+}

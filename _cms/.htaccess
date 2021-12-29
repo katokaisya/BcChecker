@@ -1,0 +1,12 @@
+DirectoryIndex index.php index.html index.htm index.cgi
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
+# リライトが効くかどうかのチェック
+RewriteRule ^_cms2/(.*)$ /_cms/rewrite.php [R=302,L]
+
+## IP制限チェック
+# ErrorDocument 503 /_cms/maintenance.html
+# RewriteCond %{REQUEST_URI} !=/_cms/maintenance.html
+## RewriteCond %{REMOTE_ADDR} !=「あなたのIPアドレス」
+# RewriteCond %{REMOTE_ADDR} !=::1
+# RewriteRule ^.*$ /_cms/maintenance.html [R=503,L]
