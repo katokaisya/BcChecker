@@ -32,19 +32,19 @@
 				<table>
 					<tr>
 						<th><label for="host" >サーバー</label></th>
-						<td><input type="text"<?php echo $host ? ' value ="'. $host .'"' : '' ?> name="host" placeholder="localhost"></td>
+						<td><input type="text" name="host" placeholder="localhost"></td>
 					</tr>
 					<tr>
 						<th><label for="user" >ユーザー名</label></th>
-						<td><input type="text"<?php echo $user ? ' value ="'. $user .'"' : '' ?> name="user"></td>
+						<td><input type="text" name="user"></td>
 					</tr>
 					<tr>
 						<th><label for="password" >パスワード</label></th>
-						<td><input type="text"<?php echo $password ? ' value ="'. $password .'"' : '' ?> name="password"></td>
+						<td><input type="text" name="password"></td>
 					</tr>
 					<tr>
 						<th><label for="db" >DB名</label></th>
-						<td><input type="text"<?php echo $db ? ' value ="'. $db .'"' : '' ?> name="db"></td>
+						<td><input type="text" name="db"></td>
 					</tr>
 				</table>
 				<input type="submit" name="submit" value="DB接続チェックをする">
