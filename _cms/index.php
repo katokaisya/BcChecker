@@ -46,6 +46,10 @@
 						<th><label for="db" >DB名</label></th>
 						<td><input type="text" name="db"></td>
 					</tr>
+					<tr>
+						<th><label for="port" >ポート</label></th>
+						<td><input type="text"<?php echo $port ? ' value ="'. $port .'"' : '' ?> name="port"></td>
+					</tr>
 				</table>
 				<input type="submit" name="submit" value="DB接続チェックをする">
 			</form>
