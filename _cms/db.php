@@ -16,7 +16,8 @@
 					$message = '接続失敗しました。';
 				}
 				$data['host'] = $data['host'] ? $data['host'] : 'localhost';
-				$dsn = 'mysql:dbname='. $data['db']. ';host='. $data['host'];
+				$data['port'] = $data['port'] ? $data['port'] : '3306';
+				$dsn = 'mysql:dbname='. $data['db']. ';host='. $data['host']. ';port='. $data['port'];
 				try{
 				    $dbh = new PDO($dsn, $data['user'], $data['password']);
 				} catch (PDOException $e){

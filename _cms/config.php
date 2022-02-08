@@ -1,10 +1,6 @@
 <?php
 $here = '/_cms/index.php';
 $paths = [];//読み込みたいRSS FeedのURL
-$db = '';
-$host = '';
-$user = '';
-$password = '';
 
 $mailTo = '';
 $mailFrom = '';
