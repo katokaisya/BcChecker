@@ -19,15 +19,24 @@
 		<section>
 			<h2>基本チェック</h2>
 			<ul>
-				<li>phpバージョン： <?php echo phpversion(); ?></li>
+				<li>phpバージョン： <?php echo phpversion(); ?><?php
+				if (php_sapi_name() == 'cli') {
+					//CLI版php
+					echo '（コマンドライン版 (CLI)）';
+				} else {
+					//CLI版phpでない
+					echo '（コマンドライン不可）';
+				}
+				?></li>
 				<li>ホスト名： <?php echo gethostname(); ?></li>
 				<li>フルパス： <?php echo str_replace($here, '' , __FILE__)  ; ?></li>
+
 			</ul>
 		</section>
 
 		<section>
 			<h2>DB接続チェック（MySQLサーバー）</h2>
-			<?php echo ($host) ?>
+			<?php //echo ($host) ?>
 			<form action="db.php" novalidate="novalidate" id="db" method="post" accept-charset="utf-8">
 				<table>
 					<tr>
@@ -48,7 +57,7 @@
 					</tr>
 					<tr>
 						<th><label for="port" >ポート</label></th>
-						<td><input type="text"<?php echo $port ? ' value ="'. $port .'"' : '' ?> name="port"></td>
+						<td><input type="text"<?php echo !empty($port) ? ' value ="'. $port .'"' : '' ?> name="port"></td>
 					</tr>
 				</table>
 				<input type="submit" name="submit" value="DB接続チェックをする">
