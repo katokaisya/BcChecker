@@ -22,6 +22,7 @@
 				<li>phpバージョン： <?php echo phpversion(); ?></li>
 				<li>ホスト名： <?php echo gethostname(); ?></li>
 				<li>フルパス： <?php echo str_replace($here, '' , __FILE__)  ; ?></li>
+				<li>PHP実行ユーザー名： <?php echo get_current_user(); ?></li>
 			</ul>
 		</section>
 
