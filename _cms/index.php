@@ -117,6 +117,7 @@
 				<li>gd : <?php echo in_array('gd', $modules) !== false ? 'OK' : '再確認して下さい' ?></li>
 				<li>libxml : <?php echo in_array('libxml', $modules) !== false ? 'OK' : '再確認して下さい' ?></li>
 				<li>json : <?php echo in_array('json', $modules) !== false ? 'OK' : '再確認して下さい' ?></li>
+				<li>Intl : <?php echo in_array('intl', $modules) !== false ? 'OK' : '再確認して下さい' ?>（baserCMS 5系では必須）</li>
 			</ul>
 		</section>
 
